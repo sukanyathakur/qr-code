@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>QR code component</title>
+
+   <style>
+      body {
+        /* background-color: #ccf0ef; */
+        background-color: hsl(212, 45%, 89%);
+        max-width: 100%;
+        height: 100vh;
+      }
+
+      .outer {
+        position: fixed;
+        background-color: white;
+        width: 15%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .text {
+        text-align: center;
+        width: 90%;
+      }
+
+   </style>
+</head>
+<body>
+  <main>
+    <div class="outer">
+      <div>
+        <img src="./images/image-qr-code.png" alt="">
+      </div>
+      <div class="text">
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>Scan the QR code to visit Frontend Mentor and take
+          your coding skill to the next level</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
