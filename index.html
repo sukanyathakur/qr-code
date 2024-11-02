@@ -1,65 +1,76 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1440px;
+            max-height: 960px;
+            background-color: #d5e1ef;
+        }
+        .outer{
+            position: absolute;
+            background-color: white;
+            width: 329px;
+            height: 499px;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            padding: 16px 16px 40px 16px;
+            border-radius: 20px;
+            box-sizing: border-box;  
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            /* padding: 16px; */
+            line-height: 120%;
+            letter-spacing: 0;
+            text-align: center;
+            color: #1f314f;
+            margin-bottom: 8px;
+            padding: 0;
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>QR code component</title>
-
-   <style>
-      body {
-        /* background-color: #ccf0ef; */
-        background-color: hsl(212, 45%, 89%);
-        max-width: 100%;
-        height: 100vh;
-      }
-
-      .outer {
-        position: fixed;
-        background-color: white;
-        width: 15%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        border-radius: 20px;
-      }
-
-      img {
-        width: 100%;
-        border-radius: 15px;
-      }
-
-      .text {
-        font-size: 15px;
-        text-align: center;
-        width: 90%;
-        font-weight: 400;
-      }
-      .head {
-        font-size: 15px;
-        text-align: center;
-        width: 90%;
-        font-weight: 700;
-      }
-
-   </style>
+        }
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: .19px;
+            color: #687780;
+            margin-top: 8px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;    
+        }
+        .textbox {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 131px;
+        }
+    </style>
 </head>
 <body>
-  <main>
+    
     <div class="outer">
-      <div>
-        <img src="./images/image-qr-code.png" alt="">
-      </div>
-      <div>
-        <p class="head">Improve your front-end skills by building projects</p>
-        <p class="text">Scan the QR code to visit Frontend Mentor and take
-          your coding skill to the next level</p>
         
-      </div>
-    </div>
-  </main>
+        <img src="./images/image-qr-code.png" alt="">
+        
+        <div class="textbox">
+            <h2>Improve your front-end skills by building projects</h2>
+            <p>Scan the QR code to visit Fronend Mentor 
+                and take your coding skills to the next 
+                level</p>
+        </div>
+    
+</div>
+    
 </body>
 </html>
